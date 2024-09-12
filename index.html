@@ -1,0 +1,66 @@
+<head>
+    <title>TP01 - Flu Charly</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>TP01 - Flu Charly</h1>
+    </header>
+    <main>
+        <div class="form__container">
+            <h2>Inscription compte client</h2>
+            <form>
+                <div class="form_wrapper">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required placeholder="Nom">
+                </div>
+                <div class="form_wrapper">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required placeholder="Prénom">
+                </div>
+                <div class="form_wrapper">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse" required placeholder="Adresse">
+                </div>
+                <div class="form_wrapper">
+                    <label for="cp">Code postal</label>
+                    <input type="text" id="cp" name="cp" required placeholder="Code postal">
+                </div>
+                <div class="form_wrapper">
+                    <label for="ville">Ville</label>
+                    <input type="text" id="ville" name="ville" required placeholder="Ville">
+                </div>
+                <div class="form_wrapper">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Téléphone">
+                </div>
+                <div class="form_wrapper">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </div>
+                <div class="form_wrapper">
+                    <label for="gender">Civilité</label>
+                    <select name="gender" id="gender-select">
+                        <option value="">--Veuillez choisir une option--</option>
+                        <option value="mr">Mr.</option>
+                        <option value="mme">Mme.</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <div class="form_wrapper">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required placeholder="Mot de passe">
+                </div>
+                <div class="form_wrapper">
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login" required placeholder="Login">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
