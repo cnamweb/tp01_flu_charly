@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <img src="antoine.jpg" alt="logo" class="antoine">
     <header>
         <h1>TP01 - Flu Charly</h1>
     </header>
@@ -15,42 +16,53 @@
         <div class="form_container">
             <h2>Inscription compte client</h2>
             <form>
-                <div class="form_wrapper">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" required placeholder="Nom">
+                <div class="form_group">
+                    <div class="form_wrapper">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Nom">
+                    </div>
+                    <div class="form_wrapper">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" required placeholder="Prénom">
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <div class="form_wrapper">
+                        <label for="adresse">Adresse</label>
+                        <input type="text" id="adresse" name="adresse" required placeholder="Adresse">
+                    </div>
+                    <div class="form_wrapper">
+                        <label for="cp">Code postal</label>
+                        <input type="number" id="cp" name="cp" required placeholder="Code postal">
+                    </div>
+                    <div class="form_wrapper">
+                        <label for="ville">Ville</label>
+                        <input type="text" id="ville" name="ville" required placeholder="Ville">
+                    </div>
+                </div>
+                <div class="form_group">
+                    <div class="form_wrapper">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Téléphone">
+                    </div>
+                    <div class="form_wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="form_wrapper">
+                        <label for="gender">Civilité</label>
+                        <select name="gender" id="gender-select">
+                            <option value="">--Veuillez choisir une option--</option>
+                            <option value="mr">Mr.</option>
+                            <option value="mme">Mme.</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form_wrapper">
-                    <label for="prenom">Prénom</label>
-                    <input type="text" id="prenom" name="prenom" required placeholder="Prénom">
-                </div>
-                <div class="form_wrapper">
-                    <label for="adresse">Adresse</label>
-                    <input type="text" id="adresse" name="adresse" required placeholder="Adresse">
-                </div>
-                <div class="form_wrapper">
-                    <label for="cp">Code postal</label>
-                    <input type="text" id="cp" name="cp" required placeholder="Code postal">
-                </div>
-                <div class="form_wrapper">
-                    <label for="ville">Ville</label>
-                    <input type="text" id="ville" name="ville" required placeholder="Ville">
-                </div>
-                <div class="form_wrapper">
-                    <label for="phone">Téléphone</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="Téléphone">
-                </div>
-                <div class="form_wrapper">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Email">
-                </div>
-                <div class="form_wrapper">
-                    <label for="gender">Civilité</label>
-                    <select name="gender" id="gender-select">
-                        <option value="">--Veuillez choisir une option--</option>
-                        <option value="mr">Mr.</option>
-                        <option value="mme">Mme.</option>
-                        <option value="other">Autre</option>
-                    </select>
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login" required placeholder="Login">
                 </div>
                 <div class="form_wrapper">
                     <label for="password">Mot de passe</label>
@@ -61,11 +73,7 @@
                     <input type="password" id="password-confirm" name="password-confirm" required
                         placeholder="Confirmer mot de passe">
                 </div>
-                <div class="form_wrapper">
-                    <label for="login">Login</label>
-                    <input type="text" id="login" name="login" required placeholder="Login">
-                </div>
-                <div class="form_wrapper">
+                <div class="form_wrapper end">
                     <button type="submit">S'inscrire</button>
                 </div>
             </form>

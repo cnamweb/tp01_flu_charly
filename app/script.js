@@ -6,6 +6,7 @@ $(document).ready(function() {
         if (password !== confirmPassword) {
             event.preventDefault();  // Prevent form submission
             alert("Les mots de passe ne correspondent pas.");
+            return;
         }
 
         alert("Formulaire envoyé !");
